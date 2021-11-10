@@ -1,0 +1,9 @@
+.footer-style{
+    background-color: #fa3d2c4b;
+    padding: 50px;
+}
+
+.footer-size{
+    display: flex;
+   text-align: justify;
+}
