@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+   font-family: 'Playfair Display', serif;
+}
+.banner-1{
+    background-image: url('https://i.ibb.co/SPpHQnR/mob-slider-1-cacbfade-a870-4266-b420-7eb951e69687-767x-1-767x.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
 
+.banner-2{
+    background-image: url('https://i.ibb.co/B2MZrfj/mob-slider-2-767x-1-767x.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.banner-3{
+    background-image: url('https://i.ibb.co/PWMt5Ny/mob-slider-3-767x-1-767x.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
 
-.home-style{
-margin-top: 300px;
+.banner-size{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background-color:#fffbf8;
+}
+
+.banner-text {
+    font-family: 'Playfair Display', serif;
+}
+
+.banner-text h2{
+    padding-bottom: 10px;
+    color: #f97c37;
+}
+.banner-text h6{
+    padding-bottom: 10px;
+}
+.banner-text button{
+    padding: 10px;
+}
+.btn-size{
+    background-color: #f97636 !important;
+    border-radius: 10px !important;
 }

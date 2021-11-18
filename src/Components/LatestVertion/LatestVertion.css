@@ -1,0 +1,52 @@
+.latest-image{
+    background-image: url('https://i.ibb.co/CnNrfBf/blog-7-1024x1024.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.latest-image-2{
+    background-image: url('https://i.ibb.co/XFKBrRD/blog-5-1024x1024.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.latest-image-3{
+    background-image: url('https://i.ibb.co/z2zg02L/blog-6-1024x1024.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.latest-text{
+    margin-top: 20px;
+}
+
+.latest-size{
+    display: flex;
+    text-align: justify;
+}
+
+.text-size h6{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-size h4{
+    padding-bottom: 10px;
+}
+
+.text-size p{
+    padding-bottom: 10px;
+}
+
+.text-size button{
+ margin-bottom: 10px;
+}
