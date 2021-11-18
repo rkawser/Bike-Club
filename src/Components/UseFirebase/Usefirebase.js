@@ -13,15 +13,21 @@ firebaseAuthentication();
 
 const useFirebase=()=>{
 const [user,setUser]=useState({});
+const [isloading,setIsloading]=useState(true)
 const googleProvider =new GoogleAuthProvider();
 const auth =getAuth();
 
-    const signInGoogle =()=>{
+const signInGoogle =()=>{
+      setIsloading(true)
         signInWithPopup(auth, googleProvider)
         .then(result=>{
             setUser(result.user)
             console.log(result.user);
         })
+        .catch(error=>{
+          console.log(error.message);
+        })
+        .finally(()=>setIsloading(false));
     }
 
   const logout=()=>{
@@ -36,6 +42,7 @@ useEffect(()=>{
         if (user) {
           setUser(user)
         } 
+        setIsloading(false)
       });
     },[])
 
@@ -50,9 +57,11 @@ useEffect(()=>{
     })
   }
    
-   const handleLogin =(email,password)=>{
+   const handleLogin =(email,password,location,history)=>{
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
+      const destination = location?.state?.from || '/';
+      history.replace(destination);
       setUser(result.user)
     })
     .catch(error=>{
@@ -77,7 +86,8 @@ return{
     signInGoogle,
     logout,
     handleLogin,
-    handleRegister
+    handleRegister,
+    isloading
 } 
 
 }

@@ -1,33 +1,28 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link,useHistory,useLocation } from 'react-router-dom';
 import useAuth from './../AuthProvider/UseAuth';
 import { useState } from 'react';
-const Login = () => {
-    const { register, handleSubmit,handleLogin } = useForm();
-    const {user, signInGoogle}=useAuth();
-    const [email,setEmail]=useState('');
-    const [password,setPassword]=useState('');
 
+const Login = () => {
+    const { register, handleSubmit} = useForm();
+    const {signInGoogle,handleLogin}=useAuth();
+    
+    const location = useLocation();
+    const history = useHistory()
+    
     const onSubmit = data =>{ 
         console.log(data);
-        handleLogin(email,password)
+        handleLogin(data.email,data.password,location,history)
     }
   
-   const handleEmail=(e)=>{
-       setEmail(e.target.value)
-   }
-
-   const handlePassword=(e)=>{
-    setPassword(e.target.value)
-    }
-
+  
     return (
         <div>
             <h2>login page</h2>
      <form className='register-form' onSubmit={handleSubmit(onSubmit)}>
-           <input type='email' {...register("email" )} onClick={handleEmail} placeholder='Email'/>
-           <input  type="password" {...register("age")}onClick={handlePassword} placeholder='Password'/>
+           <input type='email' {...register("email" )}  placeholder='Email'/>
+           <input  type="password" {...register("password")} placeholder='Password'/>
            <input className='btn-size' type="submit" />
       </form>
       <div>

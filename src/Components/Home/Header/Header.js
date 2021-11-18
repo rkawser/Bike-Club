@@ -27,10 +27,12 @@ const Header = () => {
       </Nav>
       <Form className="d-flex">
       {user.displayName && <p>{user.displayName}</p>}
+       
         <Link to='/login'>
-          <OffCanvasExample/>
-       {user.displayName ? <button className='btn btn-danger'  onClick={logout}>logout</button> : <Button className='btn btn-primary' variant="outline-success">Login</Button>}
+        <Button className='btn btn-primary me-2' variant="outline-success">Login</Button>
         </Link>
+
+       {user.displayName && <OffCanvasExample/>}
       </Form>
     </Navbar.Collapse>
   </Container>

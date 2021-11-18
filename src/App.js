@@ -11,6 +11,10 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import OffCanvasExample from './Components/DashBord/DashBord';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
+import PrivatRoute from './Components/Privat/PrivatRoute';
+import Review from './Components/Review/Review';
+import Payment from './Components/Payment/Payment';
+import MyOrders from './Components/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -25,18 +29,31 @@ function App() {
         <Route path='/home'>
         <Home></Home>
         </Route>
-        <Route path='/service'>
+        <PrivatRoute path='/service'>
         <Service></Service>
-        </Route>
+        </PrivatRoute>
         <Route path='/register'>
         <Register></Register>
         </Route>
+
         <Route path='/login'>
         <Login></Login>
         </Route>
 
         <Route path='/dashbord'>
         <OffCanvasExample></OffCanvasExample>
+        </Route>
+
+        <Route path='/review'>
+        <Review></Review>
+        </Route>
+
+        <Route path='/payment'>
+       <Payment></Payment>
+        </Route>
+
+        <Route path='/myorders'>
+       <MyOrders></MyOrders>
         </Route>
 
         <Route path='*'>
