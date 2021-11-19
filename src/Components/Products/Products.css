@@ -1,0 +1,12 @@
+.card-size{
+    text-align: justify;
+    background-color: #000c6bad;
+    color: aliceblue;
+    
+}
+
+.Cardtext-size{
+    display: flex;
+    justify-content: space-between;
+    
+}

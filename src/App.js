@@ -15,6 +15,7 @@ import PrivatRoute from './Components/Privat/PrivatRoute';
 import Review from './Components/Review/Review';
 import Payment from './Components/Payment/Payment';
 import MyOrders from './Components/MyOrders/MyOrders';
+import Details from './Components/Details/Details';
 
 function App() {
   return (
@@ -54,6 +55,10 @@ function App() {
 
         <Route path='/myorders'>
        <MyOrders></MyOrders>
+        </Route>
+
+        <Route path='/orders/:id'>
+        <Details></Details>
         </Route>
 
         <Route path='*'>

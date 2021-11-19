@@ -12,6 +12,7 @@ const Review = () => {
             <h2>Review page</h2>
   <form className='review-form' onSubmit={handleSubmit(onSubmit)}>
       <input {...register("name")}  placeholder='name' value={user.displayName}/>
+      <input {...register("email")}  placeholder='name' value={user.email}/>
       <textarea {...register("review")} placeholder='review'/>
       <input type="number" {...register("rating")} placeholder='rating'/>
       <input className='btn btn-success' type="submit" />

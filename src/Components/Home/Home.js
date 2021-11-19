@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LatestVertion from '../LatestVertion/LatestVertion';
+import Product from '../Product/Product';
 import './Home.css'
 const Home = () => {
     return (
@@ -86,6 +87,9 @@ const Home = () => {
     </Container>
   </Carousel.Item>
 </Carousel>
+        </div>
+        <div className='my-5'>
+            <Product></Product>
         </div>
     <div>
         <LatestVertion></LatestVertion>
