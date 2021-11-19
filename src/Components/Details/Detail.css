@@ -1,0 +1,22 @@
+
+.detail-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-size{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.confirm-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-form input{
+    width: 70%;
+    margin-top: 10px;
+}

@@ -21,7 +21,7 @@ const Header = () => {
         navbarScroll
       >
         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-        <Nav.Link as={Link} to="service">service</Nav.Link>
+        <Nav.Link as={Link} to="service">Explor-Bicycle</Nav.Link>
         <Nav.Link href="#action2">about</Nav.Link>
         
       </Nav>
