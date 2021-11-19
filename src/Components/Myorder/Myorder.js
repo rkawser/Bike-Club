@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-const Myorder = ({orders}) => {
+const Myorder = ({orders,handleOrderDelete}) => {
 
-    const{userName, image ,price, productName,status}=orders
+    const{userName, image ,price, productName,status,_id}=orders
+
+
     return (
         <Col>
       <Card>
@@ -22,7 +24,8 @@ const Myorder = ({orders}) => {
           <Card.Text>
             {status}
           </Card.Text>
-          <button className='btn btn-danger'>Cancel</button>
+
+          <button className='btn btn-danger' onClick={()=> handleOrderDelete(_id)}>Cancel</button>
         </Card.Body>
       </Card>
     </Col>

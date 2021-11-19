@@ -1,10 +1,10 @@
 import React from 'react';
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
-import Feedback from 'react-bootstrap/esm/Feedback';
 import { Link } from 'react-router-dom';
 import LatestVertion from '../LatestVertion/LatestVertion';
 import Product from '../Product/Product';
 import './Home.css'
+import Feedback from './../Feedback/Feedback';
 const Home = () => {
     return (
         <>

@@ -18,7 +18,8 @@ import MyOrders from './Components/MyOrders/MyOrders';
 import Details from './Components/Details/Details';
 import AddProduct from './Components/AddProduct/AddProduct';
 import About from './Components/About/About';
-import Feedback from 'react-bootstrap/esm/Feedback';
+import Reviews from './Components/Reviews/Reviews';
+import Feedback from './Components/Feedback/Feedback';
 
 
 function App() {
@@ -77,7 +78,10 @@ function App() {
         <Route path='/feedback'>
         <Feedback></Feedback>
         </Route>
-        
+
+        <Route path='/reviews'>
+        <Reviews></Reviews>
+        </Route>
 
         <Route path='*'>
           <PageNoteFound></PageNoteFound>
