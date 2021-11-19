@@ -7,7 +7,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        axios.post('http://localhost:5000/bicycle',data)
+        axios.post('https://salty-refuge-18117.herokuapp.com/bicycle',data)
         .then(res=>{
             console.log(res);
         })

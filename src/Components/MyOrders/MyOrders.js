@@ -10,13 +10,13 @@ const MyOrders = () => {
     const {user} = useAuth();
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/userOrders/${user.email}`)
+        fetch(`https://salty-refuge-18117.herokuapp.com/userOrders/${user.email}`)
         .then(res=>res.json())
         .then(data=>setOrder(data))
     },[user.email]);
 
 const handleOrderDelete=(id)=>{
-    axios.delete(`http://localhost:5000/userOrders/${user.email}/${id}`)
+    axios.delete(`https://salty-refuge-18117.herokuapp.com/userOrders/${user.email}/${id}`)
     .then(res=>{
         alert('delete confirm')
         const remainningData=order.filter(or=> or.email !== user.email && or._id !== id)

@@ -14,7 +14,7 @@ const Review = () => {
      setValue('email', `${user.email}`)
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/userReview', data)
+        axios.post('https://salty-refuge-18117.herokuapp.com/userReview', data)
             .then(res => {
                 swal("Thanks!", "your review!", "success");
                 history.push('/review')

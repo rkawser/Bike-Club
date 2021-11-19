@@ -19,7 +19,7 @@ const Details = () => {
    const history = useHistory();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/bicycle/${id}`)
+        fetch(`https://salty-refuge-18117.herokuapp.com/bicycle/${id}`)
             .then(res => res.json())
             .then(data => setDetail(data))
 
@@ -34,7 +34,7 @@ const Details = () => {
     //hook form
     const { register, handleSubmit, setValue } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/userOrders', data)
+        axios.post('https://salty-refuge-18117.herokuapp.com/userOrders', data)
             .then(res => {
                 swal("Good job!", "Order added successfully !", "success");
                 history.push('/')

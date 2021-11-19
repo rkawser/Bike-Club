@@ -7,7 +7,7 @@ import Explpore from '../Explore/Explpore';
 const Service = () => {
     const[explore,setExplore]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/bicycles')
+        fetch('https://salty-refuge-18117.herokuapp.com/bicycles')
         .then(res=>res.json())
         .then(data=>setExplore(data))
     },[])
