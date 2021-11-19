@@ -29,7 +29,7 @@ const Login = () => {
           <h6>NewUser 
               <Link to='/register'>Register</Link>
           </h6>
-          <button onClick={signInGoogle} className='btn btn-primary'>SignIn Google</button>
+          <button onClick={()=> signInGoogle(location,history)} className='btn btn-primary'>SignIn Google</button>
       </div>
         </div>
     );

@@ -36,9 +36,10 @@ function App() {
         <Home></Home>
         
         </Route>
-        <PrivatRoute path='/service'>
+        <Route path='/service'>
         <Service></Service>
-        </PrivatRoute>
+        </Route>
+
         <Route path='/register'>
         <Register></Register>
         </Route>
@@ -63,9 +64,9 @@ function App() {
        <MyOrders></MyOrders>
         </Route>
 
-        <Route path='/orders/:id'>
+        <PrivatRoute path='/orders/:id'>
         <Details></Details>
-        </Route>
+        </PrivatRoute>
 
         <Route path='/addproduct'>
         <AddProduct></AddProduct>

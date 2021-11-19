@@ -17,12 +17,12 @@ const [isloading,setIsloading]=useState(true)
 const googleProvider =new GoogleAuthProvider();
 const auth =getAuth();
 
-const signInGoogle =()=>{
+const signInGoogle =(location,history)=>{
       setIsloading(true)
         signInWithPopup(auth, googleProvider)
         .then(result=>{
             setUser(result.user)
-            console.log(result.user);
+            history.push(location?.state?.from || '/') 
         })
         .catch(error=>{
           console.log(error.message);

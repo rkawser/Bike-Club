@@ -41,6 +41,10 @@ function OffCanvasExample({ name, ...props }) {
             <Link to='/review'> 
             <button className='btn btn-success my-1 d-block px-5'><MdRateReview/>Review</button>
             </Link>
+
+            <Link to='/addproduct'> 
+            <button className='btn btn-success my-1 d-block px-5'><MdRateReview/>AddProduct</button>
+            </Link>
           
            { user.displayName && <button className='btn btn-warning' onClick={logout}><AiOutlineLogout/>LogOut</button>}
           </Offcanvas.Body>
