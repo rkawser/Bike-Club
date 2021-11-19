@@ -17,7 +17,7 @@ const Service = () => {
             <Container>
             <Row xs={1} md={3} className="g-4">
                 {
-                    explore.map(explores=><Explpore explore={explores}></Explpore>)
+                    explore.map(explores=><Explpore key={explores._id} explore={explores}></Explpore>)
                 }
             </Row>
             </Container>

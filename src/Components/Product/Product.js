@@ -18,7 +18,7 @@ const Product = () => {
             <Container>
             <Row xs={1} md={3} className="g-4">
                 {
-                    product.map(products=><Products product={products}></Products>)
+                    product.map(products=><Products key={products._id} product={products}></Products>)
                 }
             </Row>
             </Container>
