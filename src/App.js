@@ -17,6 +17,9 @@ import Payment from './Components/Payment/Payment';
 import MyOrders from './Components/MyOrders/MyOrders';
 import Details from './Components/Details/Details';
 import AddProduct from './Components/AddProduct/AddProduct';
+import About from './Components/About/About';
+import Feedback from 'react-bootstrap/esm/Feedback';
+
 
 function App() {
   return (
@@ -30,6 +33,7 @@ function App() {
         </Route>
         <Route path='/home'>
         <Home></Home>
+        
         </Route>
         <PrivatRoute path='/service'>
         <Service></Service>
@@ -65,6 +69,15 @@ function App() {
         <Route path='/addproduct'>
         <AddProduct></AddProduct>
         </Route>
+
+        <Route path='/about'>
+        <About></About>
+        </Route>
+
+        <Route path='/feedback'>
+        <Feedback></Feedback>
+        </Route>
+        
 
         <Route path='*'>
           <PageNoteFound></PageNoteFound>

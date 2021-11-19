@@ -22,14 +22,16 @@ const Header = () => {
       >
         <Nav.Link as={Link} to="/home">Home</Nav.Link>
         <Nav.Link as={Link} to="service">Explor-Bicycle</Nav.Link>
-        <Nav.Link href="#action2">about</Nav.Link>
+        <Nav.Link as={Link} to="/about">about</Nav.Link>
         
       </Nav>
       <Form className="d-flex">
-      {user.displayName && <p>{user.displayName}</p>}
+    
        
         <Link to='/login'>
-        <Button className='btn btn-primary me-2' variant="outline-success">Login</Button>
+
+      {user.displayName ? <p>{user.displayName}</p> :  <Button className='btn btn-primary me-2' variant="outline-success">Login</Button>}
+
         </Link>
 
        {user.displayName && <OffCanvasExample/>}
