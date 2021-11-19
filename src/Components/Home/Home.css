@@ -54,3 +54,12 @@ body{
     border-radius: 10px !important;
 }
 
+.review-size{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.review-text{
+    text-align: justify;
+}
